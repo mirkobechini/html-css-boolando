@@ -55,19 +55,22 @@ ul {
 }
 
 /* #endregion Common */
+/* #region Utility */
 
+.flex-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* #endregion Utility*/
 /* #region Header */
 header {
 
     background-color: var(--bld-primary);
     color: var(--bld-bg);
     position: sticky;
-
-    .flex-cont {
-        justify-content: space-between;
-        align-items: center;
-        height: 70px;
-    }
 
     img {
         width: 132px;
@@ -177,6 +180,35 @@ main {
 /* #region Footer */
 footer {
     background-color: var(--bld-secondary);
+    color: var(--bld-bg);
+
+    .info {
+        flex-direction: column;
+        gap: 10px;
+
+        ul {
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 13px;
+        }
+    }
+
+    .social {
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+            font-weight: bold;
+            font: 9px;
+        }
+
+        ul {
+            justify-content: center;
+            gap: 10px;            
+            font-size: 14px;
+        }
+
+    }
 }
 
 /* #endregion Footer */
