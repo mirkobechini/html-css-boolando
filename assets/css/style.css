@@ -31,6 +31,10 @@
 html,
 body {
     max-width: 1920px;
+    a{
+        text-decoration: none;
+        color: var(--bld-bg);
+    }
 }
 
 .container {
